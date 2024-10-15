@@ -19,6 +19,7 @@ public class BlogController {
 
     @GetMapping("/blog")
     public ResponseEntity<String> blog(@RequestBody Blog blog) {
+        System.out.println("Hello");
         return new ResponseEntity<>(HttpStatus.OK);
     }
 }
